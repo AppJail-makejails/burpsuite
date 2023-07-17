@@ -20,7 +20,7 @@ CMD echo "======> Installing Burp Suite <======"
 CMD mkdir -p /opt/burpsuite
 
 CMD echo "======> Downloading <======"
-CMD wget -O /opt/burpsuite/burpsuite.jar 'https://portswigger-cdn.net/burp/releases/download?product=community&version=${burpsuite_version}&type=Jar'
+CMD wget -O /opt/burpsuite/burpsuite.jar "https://portswigger-cdn.net/burp/releases/download?product=community&version=${burpsuite_version}&type=Jar"
 
 CMD echo "======> Changing owner and group <======"
 CMD chown -R burpsuite:burpsuite /opt/burpsuite
