@@ -65,6 +65,47 @@ appjail run -s burpsuite_open burpsuite
     <img src="https://i.imgur.com/yl645zm.png" />
 </p>
 
+### Arguments
+
+* `burpsuite_tag` (default: `latest`): see [#tags](#tags).
+
+## How to build the Image
+
+Make any changes you want to your image.
+
+```
+INCLUDE options/network.makejail
+INCLUDE gh+AppJail-makejails/burpsuite --file build.makejail
+
+ARG ruleset=0
+
+OPTION template=files/linux.conf
+OPTION devfs_ruleset=${ruleset}
+```
+
+Build the jail:
+
+```sh
+appjail makejail -j burpsuite -- --ruleset 13
+```
+
+Stop and export the jail:
+
+```
+appjail stop burpsuite
+appjail image export burpsuite
+```
+
+### Arguments
+
+* `burpsuite_version` (default: `2023.6.2`).
+
+## Tags
+
+| Tag      | Arch    | Version    | `burpsuite_version` |
+| -------- | ------- | ---------- | ------------------- |
+| `latest` | `amd64` | `bullseye` |      2023.6.2       |
+
 ## Notes
 
 1. This Makejail uses [Debian](https://github.com/AppJail-makejails/debian).

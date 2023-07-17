@@ -1,0 +1,33 @@
+INCLUDE gh+AppJail-makejails/debian
+
+ARG burpsuite_version=2023.6.2
+
+RAW if ! printf "%s" "${burpsuite_version}" | grep -qEe '[0-9]{4}\.[0-9]+\.[0-9]+'; then
+	CMD echo "###> Invalid Burp Suite version. <###"
+	RAW exit 1
+RAW fi
+
+CMD echo "======> Creating user 'burpsuite' <======"
+CMD useradd -Um -s /bin/bash burpsuite
+
+CMD echo "======> Installing dependencies (jail) <======"
+PKG openjdk-17-jre
+# This is only for downloading Burp Suite.
+PKG wget
+
+CMD echo "======> Installing Burp Suite <======"
+
+CMD mkdir -p /opt/burpsuite
+
+CMD echo "======> Downloading <======"
+CMD wget -O /opt/burpsuite/burpsuite.jar 'https://portswigger-cdn.net/burp/releases/download?product=community&version=${burpsuite_version}&type=Jar'
+
+CMD echo "======> Changing owner and group <======"
+CMD chown -R burpsuite:burpsuite /opt/burpsuite
+
+CMD echo "======> Cleaning <======"
+PKG --remove wget
+PKG --autoremove
+CMD rm -rf /var/lib/apt/lists/*
+
+CMD echo "======> Done <======"
