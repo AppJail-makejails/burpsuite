@@ -1,0 +1,8 @@
+tags: latest
+latest.arch: amd64
+latest.name: "burpsuite"
+latest.timestamp.amd64: 1689591653
+latest.sum.amd64: aa084c4b76593a62ec8f944f7e226fef8c0705f44d725d60c38116e5a3ee3ec5
+latest.size.amd64: 251022608
+latest.source.amd64: https://dtxdf.duckdns.org/57y7E226zc/burpsuite_latest_amd64_image_appjail
+latest.source.amd64+: https://anonget.onrender.com/57y7E226zc/burpsuite_latest_amd64_image_appjail
