@@ -1,8 +1,9 @@
 tags: latest
 latest.arch: amd64
 latest.name: "burpsuite"
-latest.timestamp.amd64: 1689619891
-latest.sum.amd64: b429581a792ffc691e4544cbf7877cc085a22042c81a14cdef9741012955e612
-latest.size.amd64: 730139268
-latest.source.amd64: https://dtxdf.duckdns.org/F7l7Ia20z7/burpsuite_latest_amd64_image_appjail
-latest.source.amd64+: https://anonget.onrender.com/F7l7Ia20z7/burpsuite_latest_amd64_image_appjail
+latest.timestamp.amd64: 1691182069
+latest.sum.amd64: 6d859dd20203f7cae6b948806f8868ea79ac95ad37efa9fff9bcf76b747b9dcb
+latest.size.amd64: 729893804
+latest.source.amd64: https://dtxdf.duckdns.org/A1GfO86czb/burpsuite_latest_amd64_image_appjail
+latest.source.amd64+: https://storm-bsd.duckdns.org/A1GfO86czb/burpsuite_latest_amd64_image_appjail
+latest.source.amd64+: https://anonget.onrender.com/A1GfO86czb/burpsuite_latest_amd64_image_appjail
