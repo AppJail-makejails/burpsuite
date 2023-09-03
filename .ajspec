@@ -1,7 +1,7 @@
 tags: latest
 latest.arch: amd64
 latest.name: "burpsuite"
-latest.timestamp.amd64: 1692902603
-latest.sum.amd64: b23d8872c627a67632fa64cb9117a2d0c5117b77700c78fefa7f4d35909b6ab6
-latest.size.amd64: 738160756
+latest.timestamp.amd64: 1693675860
+latest.sum.amd64: 20cb74a4aefd32a61f7ac76be9904033c02cbd2a6f29a7f947b4df5c18f22ae4
+latest.size.amd64: 739935784
 latest.source.amd64: "http://appjail.hpc.at/burpsuite/latest-amd64-image.appjail"
