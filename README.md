@@ -98,13 +98,13 @@ appjail image export burpsuite
 
 ### Arguments
 
-* `burpsuite_version` (default: `2023.9.4`).
+* `burpsuite_version` (default: `2023.10.1.1`).
 
 ## Tags
 
 | Tag      | Arch    | Version    | `burpsuite_version` |
 | -------- | ------- | ---------- | ------------------- |
-| `latest` | `amd64` | `bullseye` |      2023.9.4       |
+| `latest` | `amd64` | `bullseye` |     2023.10.1.1     |
 
 ## Notes
 
