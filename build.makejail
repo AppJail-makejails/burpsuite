@@ -1,4 +1,5 @@
 INCLUDE gh+AppJail-makejails/debian
+INCLUDE options/devices.makejail
 
 ARG burpsuite_version=2023.10.3.4
 

@@ -14,10 +14,7 @@ portswigger.net
 INCLUDE options/network.makejail
 INCLUDE gh+AppJail-makejails/burpsuite
 
-ARG ruleset=0
-
 OPTION template=files/linux.conf
-OPTION devfs_ruleset=${ruleset}
 # Recommended
 OPTION tmpdir
 # But this works fine without sharing /tmp
@@ -53,8 +50,6 @@ appjail makejail -j burpsuite -- --network development --ruleset 11
 appjail start burpsuite
 ```
 
-Your ruleset must unhide `shm` and `shm/*`.
-
 After Makejail builds the jail, you can run Burp Suite using the `burpsuite_open` custom stage:
 
 ```sh
@@ -76,17 +71,12 @@ Make any changes you want to your image.
 ```
 INCLUDE options/network.makejail
 INCLUDE gh+AppJail-makejails/burpsuite --file build.makejail
-
-ARG ruleset=0
-
-OPTION template=files/linux.conf
-OPTION devfs_ruleset=${ruleset}
 ```
 
 Build the jail:
 
 ```sh
-appjail makejail -j burpsuite -- --ruleset 13
+appjail makejail -j burpsuite
 ```
 
 Stop and export the jail:
