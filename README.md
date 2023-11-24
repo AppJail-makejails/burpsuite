@@ -46,7 +46,7 @@ enforce_statfs: 1
 Open a shell and run `appjail makejail` and `appjail start`:
 
 ```sh
-appjail makejail -j burpsuite -- --network development --ruleset 11
+appjail makejail -j burpsuite -- --network development
 appjail start burpsuite
 ```
 
