@@ -64,32 +64,6 @@ appjail run -s burpsuite_open burpsuite
 
 * `burpsuite_tag` (default: `latest`): see [#tags](#tags).
 
-## How to build the Image
-
-Make any changes you want to your image.
-
-```
-INCLUDE options/network.makejail
-INCLUDE gh+AppJail-makejails/burpsuite --file build.makejail
-```
-
-Build the jail:
-
-```sh
-appjail makejail -j burpsuite
-```
-
-Stop and export the jail:
-
-```
-appjail stop burpsuite
-appjail image export burpsuite
-```
-
-### Arguments
-
-* `burpsuite_version` (default: `2023.10.3.4`).
-
 ## Tags
 
 | Tag      | Arch    | Version    | `burpsuite_version` |
