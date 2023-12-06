@@ -1,7 +1,7 @@
 INCLUDE gh+AppJail-makejails/debian
 INCLUDE options/devices.makejail
 
-ARG burpsuite_version=2023.10.3.4
+ARG burpsuite_version=2023.10.3.7
 
 RAW if ! printf "%s" "${burpsuite_version}" | grep -qEe '[0-9]{4}\.[0-9]+\.[0-9]+'; then
 	CMD echo "###> Invalid Burp Suite version. <###"
