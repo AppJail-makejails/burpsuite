@@ -68,7 +68,7 @@ appjail run -s burpsuite_open burpsuite
 
 | Tag      | Arch    | Version    | `burpsuite_version` |
 | -------- | ------- | ---------- | ------------------- |
-| `latest` | `amd64` | `bullseye` |    `2023.10.3.4`    |
+| `latest` | `amd64` | `bullseye` |    `2023.10.3.7`    |
 
 ## Notes
 
