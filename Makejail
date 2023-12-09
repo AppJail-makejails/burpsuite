@@ -8,11 +8,8 @@ STOP
 
 STAGE custom:burpsuite_open
 
-ARG display=:0
+ENV DISPLAY=:0
 
-CMD --local env "DISPLAY=${display}" xhost + > /dev/null
-
-ENV DISPLAY=${display}
 USER burpsuite
 WORKDIR /opt/burpsuite
 ENTRYPOINT java -jar

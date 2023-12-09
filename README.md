@@ -53,6 +53,7 @@ appjail start burpsuite
 After Makejail builds the jail, you can run Burp Suite using the `burpsuite_open` custom stage:
 
 ```sh
+xhost +
 appjail run -s burpsuite_open burpsuite
 ```
 
