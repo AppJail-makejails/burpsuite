@@ -74,10 +74,3 @@ appjail run -s burpsuite_open burpsuite
 ## Notes
 
 1. This Makejail uses [Debian](https://github.com/AppJail-makejails/debian).
-
-## Bugs
-
-1. When clicking in `Open Browser` the error `Cannot invoke "net.portswigger.browser.Ze3.ZM()" because "this.ZO" is null` is displayed.
-2. Burp's browser cannot be used.
-
-If you fix them, feel free to send a pull request.
