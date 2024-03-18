@@ -12,7 +12,10 @@ CMD echo "======> Creating user 'burpsuite' <======"
 CMD useradd -Um -s /bin/bash burpsuite
 
 CMD echo "======> Installing dependencies (jail) <======"
-PKG openjdk-17-jre xorg libxkbcommon-x11-0
+# Workaround to install dependencies without prompting question in a interactive window.
+# I need this to use Reproduce without problems.
+VAR --make-arg-env DEBIAN_FRONTEND=noninteractive
+CMD apt install -y openjdk-17-jre xorg libxkbcommon-x11-0
 # This is only for downloading Burp Suite.
 PKG wget
 
