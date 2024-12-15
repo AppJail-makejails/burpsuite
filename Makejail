@@ -1,8 +1,9 @@
 INCLUDE options/options.makejail
 
 ARG burpsuite_tag=latest
+ARG burpsuite_ajspec=gh+AppJail-makejails/burpsuite
 
-FROM --entrypoint gh+AppJail-makejails/burpsuite burpsuite:${burpsuite_tag}
+FROM --entrypoint "${burpsuite_ajspec}" burpsuite:${burpsuite_tag}
 
 STOP
 
