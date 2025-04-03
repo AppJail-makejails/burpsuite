@@ -6,4 +6,3 @@ latest.sum.amd64: 803f6d7221ce6aabfe91a4846d53f8ccd1885da680612f17f77a1503e48325
 latest.size.amd64: 951661897
 latest.source.amd64: "http://appjail.hpc.at/burpsuite/latest-amd64-image.appjail"
 latest.source.amd64+: "https://images.all101bsd.download/burpsuite/latest-amd64-image.appjail"
-maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
