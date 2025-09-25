@@ -1,8 +1,9 @@
 tags+: latest
 latest.arch: amd64
 latest.name: "burpsuite"
-latest.timestamp.amd64: 1756970624
-latest.sum.amd64: 483a08856df7985b049572031f51f89c3490ba59b1555c646a5c759f7da69713
-latest.size.amd64: 967032407
+latest.timestamp.amd64: 1758776752
+latest.sum.amd64: dc24396a5c67f504e6a9db569edcf2c0973969e4ef495aaf5542d64cf18e224f
+latest.size.amd64: 967141918
 latest.source.amd64: "https://images.all101bsd.download/burpsuite/latest-amd64-image.appjail"
 latest.source.amd64+: "http://appjail.hpc.at/burpsuite/latest-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
